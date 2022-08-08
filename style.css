@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+}
+
+h3 {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 250;
+  font-size: 12px;
+}
+#con {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.img {
+  height: 250px;
+  width: 180px;
+  position: absolute;
+  top: 15%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  transform: rotate(20deg);
+}
+#img1 {
+  background-image: url(https://images.unsplash.com/photo-1619946794135-5bc917a27793?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);
+  background-size: cover;
+  transform: rotate(0deg);
+  z-index: 9;
+  transition: 0.9s;
+}
+#img1:hover {
+  height: 300px;
+  width: 300px;
+  transform: rotate(-10deg);
+  border-radius: 10px;
+  z-index: 999;
+}
+#img2 {
+  background-image: url(https://images.unsplash.com/photo-1620232224149-25be08bdec08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  background-size: cover;
+  transform: rotate(15deg);
+  z-index: 8;
+  transition: 0.9s;
+}
+#img2:hover {
+  height: 320px;
+  width: 320px;
+  transform: rotate(-10deg);
+  border-radius: 10px;
+  z-index: 999;
+  transition: 0.9s;
+}
+#img3 {
+  background-image: url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80);
+  background-size: cover;
+  transform: rotate(22deg);
+  z-index: 7;
+  height: 260px;
+  width: 200px;
+  transition: 0.9s;
+}
+#img3:hover {
+  height: 350px;
+  width: 350px;
+  transform: rotate(-10deg);
+  border-radius: 10px;
+  transition: 0.9s;
+  z-index: 999;
+}
+#text {
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  z-index: 99;
+}
+#text h1 {
+  font-size: 100px;
+  font-weight: 200;
+  line-height: 78px;
+}
+#bottom {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+}
